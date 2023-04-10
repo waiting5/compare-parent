@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字段对比</title>
+    <link href="/layui/css/layui.css" rel="stylesheet">
+    <script src="/layui/layui.js"></script>
+    <script src="/js/index.js"></script>
+</head>
+<body>
+<table id="field-compare" lay-filter="compare"></table>
+<div id="openForm" style="display: none">
+    <form class="layui-form" lay-filter="compareForm" action="" style="margin: 10px">
+        <input style="display: none" name="compareId" type="number">
+        <div class="layui-form-item">
+            <label class="layui-form-label">比对表</label>
+            <div class="layui-input-block">
+                <select name="tableId" lay-verify="required">
+                    <option value="1">rm_room/机房</option>
+                    <option value="2">rm_build/机楼</option>
+                    <option value="3">rm_resource/资源池</option>
+                    <option value="4">rm_device/物理设备表</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">表字段</label>
+            <div class="layui-input-block">
+                <input type="text" name="tableField" required  lay-verify="required" placeholder="请输入表字段" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">比对接口</label>
+            <div class="layui-input-block">
+                <select name="interfaceId" lay-verify="required">
+                    <option value="1">机房资源标准化接口</option>
+                    <option value="2">机楼标准化接口</option>
+                    <option value="3">数据中心标准化接口</option>
+                    <option value="4">物理机标准化接口</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">接口字段</label>
+            <div class="layui-input-block">
+                <input type="text" name="interfaceField" required  lay-verify="required" placeholder="请输入接口字段" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">字段描述</label>
+            <div class="layui-input-block">
+                <input type="text" name="fieldDesc" required  lay-verify="required" placeholder="请输入字段描述" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">对比详情</label>
+            <div class="layui-input-block">
+                <textarea name="compareDetail" placeholder="请输入内容" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+{
+  "code": 0,
+  "count": 1000,
+  "data": [
+    {
+      "city": "城市-0",
+      "classify": "作家",
+      "experience": 255,
+      "id": 10000,
+      "logins": 24,
+      "score": 57,
+      "sex": "女",
+      "sign": "签名-0",
+      "username": "user-0",
+      "words": 82830700
+    },
+    {
+      "city": "城市-1",
+      "classify": "词人",
+      "experience": 884,
+      "id": 10001,
+      "logins": 58,
+      "score": 70.5,
+      "sex": "男",
+      "sign": "签名-1",
+      "username": "user-1",
+      "words": 64928690
+    },
+    {
+      "city": "城市-2",
+      "classify": "酱油",
+      "experience": 650,
+      "id": 10002,
+      "logins": 77,
+      "score": 31,
+      "sex": "女",
+      "sign": "签名-2",
+      "username": "user-2",
+      "words": 6298078
+    },
+    {
+      "city": "城市-3",
+      "classify": "诗人",
+      "experience": 362,
+      "id": 10003,
+      "logins": 157,
+      "score": 68,
+      "sex": "女",
+      "sign": "签名-3",
+      "username": "user-3",
+      "words": 37117017
+    },
+    {
+      "city": "城市-4",
+      "classify": "作家",
+      "experience": 807,
+      "id": 10004,
+      "logins": 51,
+      "score": 6,
+      "sex": "男",
+      "sign": "签名-4",
+      "username": "user-4",
+      "words": 76263262
+    },
+    {
+      "city": "城市-5",
+      "classify": "作家",
+      "experience": 173,
+      "id": 10005,
+      "logins": 68,
+      "score": 87,
+      "sex": "女",
+      "sign": "签名-5",
+      "username": "user-5",
+      "words": 60344147
+    },
+    {
+      "city": "城市-6",
+      "classify": "作家",
+      "experience": 982,
+      "id": 10006,
+      "logins": 37,
+      "score": 34,
+      "sex": "女",
+      "sign": "签名-6",
+      "username": "user-6",
+      "words": 57768166
+    },
+    {
+      "city": "城市-7",
+      "classify": "作家",
+      "experience": 727,
+      "id": 10007,
+      "logins": 150,
+      "score": 28,
+      "sex": "男",
+      "sign": "签名-7",
+      "username": "user-7",
+      "words": 82030578
+    },
+    {
+      "city": "城市-8",
+      "classify": "词人",
+      "experience": 951,
+      "id": 10008,
+      "logins": 133,
+      "score": 14,
+      "sex": "男",
+      "sign": "签名-8",
+      "username": "user-8",
+      "words": 16503371
+    },
+    {
+      "city": "城市-9",
+      "classify": "词人",
+      "experience": 484,
+      "id": 10009,
+      "logins": 25,
+      "score": 75,
+      "sex": "女",
+      "sign": "签名-9",
+      "username": "user-9",
+      "words": 86801934
+    }
+  ],
+  "msg": ""
+}

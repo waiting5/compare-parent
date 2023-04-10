@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xzj.mapper.FieldCompareMapper">
+    <resultMap id="fieldMap" type="com.xzj.entity.FieldCompare">
+        <result column="compare_id" property="compareId" />
+        <result column="table_id" property="tableId" />
+        <result column="table_field" property="tableField" />
+        <result column="interface_id" property="interfaceId" />
+        <result column="interface_field" property="interfaceField" />
+        <result column="field_desc" property="fieldDesc" />
+        <result column="compare_detail" property="compareDetail" />
+        <result column="table_name" property="tableName" />
+        <result column="table_desc" property="tableDesc" />
+        <result column="interface_name" property="interfaceName" />
+        <result column="interface_desc" property="interfaceDesc" />
+    </resultMap>
+
+    <select id="queryList" resultMap="fieldMap" >
+        SELECT
+            a.compare_id,
+            a.table_id,
+            a.table_field,
+            a.interface_id,
+            a.interface_field,
+            a.field_desc,
+            a.compare_detail,
+            b.interface_name,
+            b.interface_desc,
+            c.table_name,
+            c.table_desc
+        FROM
+            field_compare a
+        LEFT JOIN interface_compare b ON a.interface_id = b.interface_id
+        LEFT JOIN table_compare c ON a.table_id = c.table_id
+    </select>
+
+    <insert id="insert" parameterType="com.xzj.entity.FieldCompare">
+        INSERT INTO field_compare
+            (table_id
+            , table_field
+            , interface_id
+            , interface_field
+            , field_desc
+            , compare_detail)
+        VALUES ( #{tableId},
+                #{tableField},
+                #{interfaceId},
+                 #{interfaceField},
+                 #{fieldDesc},
+                #{compareDetail})
+
+    </insert>
+
+    <update id="update" parameterType="com.xzj.entity.FieldCompare">
+        UPDATE field_compare
+        SET table_id = #{tableId}
+        , table_field = #{tableField}
+        , interface_id= #{interfaceId}
+        , interface_field = #{interfaceField}
+        , field_desc =  #{fieldDesc}
+        , compare_detail =  #{compareDetail}
+        WHERE compare_id = #{compareId}
+    </update>
+</mapper>
